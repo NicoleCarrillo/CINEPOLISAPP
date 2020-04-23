@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageButton
+        android:id="@+id/posterPrincipal"
+        android:layout_width="409dp"
+        android:layout_height="165dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:backgroundTint="#FC0C0C0C"
+        android:foregroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/botonPeli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/poster1"
+        tools:srcCompat="@drawable/poster1" />
+
+    <ImageButton
+        android:id="@+id/poster1"
+        android:layout_width="168dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toTopOf="@+id/poster4"
+        app:layout_constraintEnd_toStartOf="@+id/poster2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/poster2"
+        tools:srcCompat="@drawable/poster2" />
+
+
+    <ImageButton
+        android:id="@+id/poster2"
+        android:layout_width="189dp"
+        android:layout_height="88dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/poster3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/poster1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/poster3"
+        tools:srcCompat="@drawable/poster3" />
+
+    <ImageButton
+        android:id="@+id/poster3"
+        android:layout_width="189dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toTopOf="@+id/poster5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toEndOf="@+id/poster1"
+        app:layout_constraintTop_toBottomOf="@+id/poster2"
+        app:srcCompat="@drawable/poster4"
+        tools:srcCompat="@drawable/poster4" />
+
+
+    <ImageButton
+        android:id="@+id/poster4"
+        android:layout_width="101dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonPeli"
+        app:layout_constraintEnd_toStartOf="@+id/poster5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poster1"
+        app:srcCompat="@drawable/poster5"
+        tools:srcCompat="@drawable/poster5" />
+
+    <ImageButton
+        android:id="@+id/poster5"
+        android:layout_width="101dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonMapa"
+        app:layout_constraintEnd_toStartOf="@+id/poster6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/poster4"
+        app:layout_constraintTop_toBottomOf="@+id/poster3"
+        app:srcCompat="@drawable/poster6"
+        tools:srcCompat="@drawable/poster6" />
+
+    <ImageButton
+        android:id="@+id/poster6"
+        android:layout_width="101dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonMapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/poster5"
+        app:layout_constraintTop_toBottomOf="@+id/poster3"
+        app:srcCompat="@drawable/poster7"
+        tools:srcCompat="@drawable/poster7" />
+
+
+    <ImageButton
+        android:id="@+id/botonPeli"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/ic_movie"
+        tools:srcCompat="@drawable/ic_movie" />
+
+    <ImageButton
+        android:id="@+id/botonMapa"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonLogin"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toEndOf="@+id/botonPeli"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/ic_place"
+        tools:srcCompat="@drawable/ic_place" />
+
+    <ImageButton
+        android:id="@+id/botonLogin"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toEndOf="@+id/botonPeli"
+        app:layout_constraintTop_toBottomOf="@+id/poster5"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/ic_person"
+        tools:srcCompat="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="414dp"
+        android:layout_height="53dp"
+        android:background="#0B1CAC"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_vertical"
+        android:text="Estas en Cartelera"
+        android:textAlignment="gravity"
+        android:textColor="#F3E9E9"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/botonPeli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="408dp"
+        android:layout_height="33dp"
+        android:text="VIP Andares  3.7 km"
+        android:textAlignment="center"
+        android:textColor="#091F86"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonPeli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posterPrincipal"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
