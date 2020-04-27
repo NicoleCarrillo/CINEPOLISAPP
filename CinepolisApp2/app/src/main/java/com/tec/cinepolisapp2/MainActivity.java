@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-
+    ImageButton botonpp;
     ImageButton boton4;
     ImageButton botonPoster1;
     ImageButton botonPoster2;
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        botonpp=findViewById(R.id.botonLogin);
         boton4 = findViewById(R.id.botonMapa);
         botonPoster1 = findViewById(R.id.poster1);
         botonPoster2 = findViewById(R.id.poster2);
@@ -35,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent =new Intent(getApplicationContext(),MapsActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        botonpp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent =new Intent(getApplicationContext(),LoginPerfil.class);
                 startActivity(myIntent);
             }
         });

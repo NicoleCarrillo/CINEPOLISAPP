@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context="com.tec.cinepolisapp2.LoginPerfil">
+
+    <EditText
+        android:id="@+id/nicknameLField"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#0025B6"
+        android:foregroundTint="#0025B6"
+        android:hint="USUARIO"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordLField"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="CONTRASEÑA"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameLField" />
+
+    <Button
+        android:id="@+id/loginLButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#0025B6"
+        android:background="#0025B6"
+        android:textColor="#FFFFFF"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/registerLButton"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLField"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <Button
+        android:id="@+id/registerLButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#0025B6"
+        android:background="#0025B6"
+        android:textColor="#FFFFFF"
+        android:text="REGISTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLField"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="591dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="183dp"
+        android:background="#0025B6"
+        android:backgroundTint="#0025B6"
+        app:layout_constraintBottom_toTopOf="@+id/nicknameLField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153">
+
+        <EditText
+            android:id="@+id/sesion"
+            android:layout_width="405dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="100dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Iniciar Sesión"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
