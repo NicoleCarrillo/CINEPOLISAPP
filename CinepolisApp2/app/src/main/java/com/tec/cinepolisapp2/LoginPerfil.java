@@ -11,9 +11,11 @@ import android.widget.Toast;
 
 public class LoginPerfil extends AppCompatActivity {
 
-    EditText nickname, password;
-    Button loginLButton, registerLButton;
-    String name="Luis Nuñez",pass="1234";
+    EditText nickname, tarj;
+    Button loginLButton;
+    String name="Luis Nuñez",tarjeta="123456789",
+            name2="Nicole Carrillo",tarjeta2="987654321",
+            name3="Roberto Castro",tarjeta3="135792468";
 
 
     @Override
@@ -22,17 +24,17 @@ public class LoginPerfil extends AppCompatActivity {
         setContentView(R.layout.activity_login_perfil);
 
         nickname = (EditText)findViewById(R.id.nicknameLField);
-        password = (EditText)findViewById(R.id.passwordLField);
+        tarj = (EditText)findViewById(R.id.tarjetaField);
         loginLButton = (Button)findViewById(R.id.loginLButton);
-        registerLButton = (Button)findViewById(R.id.registerLButton);
 
         loginLButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String entryNickname = nickname.getText().toString();
-                String entryPassword = password.getText().toString();
+                String entryTarjeta = tarj.getText().toString();
 
-                if(name.equals(entryNickname)&& pass.equals(entryPassword)){
+                if((name.equals(entryNickname)&& tarjeta.equals(entryTarjeta)) || (name2.equals(entryNickname)&& tarjeta2.equals(entryTarjeta)) ||
+                        (name3.equals(entryNickname)&& tarjeta3.equals(entryTarjeta))){
                     Toast.makeText(getApplicationContext(),"Login exitoso", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginPerfil.this, Perfil.class);
                     intent.putExtra("message", entryNickname);
@@ -42,15 +44,6 @@ public class LoginPerfil extends AppCompatActivity {
                 else {
                     Toast.makeText(getApplicationContext(),"Datos incorrectos", Toast.LENGTH_SHORT).show();
                 }
-            }
-        });
-
-        registerLButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginPerfil.this, Registrar.class);
-                startActivity(intent);
-
             }
         });
 

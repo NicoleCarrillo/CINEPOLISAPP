@@ -21,7 +21,6 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".Perfil"></activity>
-        <activity android:name=".Registrar" />
         <activity android:name=".LoginPerfil" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
