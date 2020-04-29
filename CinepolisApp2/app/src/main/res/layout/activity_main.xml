@@ -146,7 +146,7 @@
         android:background="#0B1CAC"
         android:fontFamily="sans-serif-black"
         android:gravity="center_vertical"
-        android:text="Estas en Cartelera"
+        android:text="Estás en Cartelera"
         android:textAlignment="gravity"
         android:textColor="#F3E9E9"
         android:textSize="24sp"
@@ -159,7 +159,7 @@
         app:layout_constraintVertical_bias="0.003" />
 
 
-    <TextView
+    <ExpandableListView
         android:id="@+id/textView2"
         android:layout_width="408dp"
         android:layout_height="33dp"
